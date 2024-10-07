@@ -1,0 +1,53 @@
+
+.name{
+color:blue;
+display: flex;
+justify-content: center;
+}
+
+ button {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 510px;
+    top:150px;
+    border-radius: 50px;
+    margin-right: 30px;
+    font-size: 20px;
+    color:blue;
+    box-shadow: black;
+
+}
+
+
+.paper-btn{
+    background-color:aqua;
+    border:none;
+    justify-content: center;
+}
+.rock-btn {
+    background-color:aqua;
+    border:none;
+  
+
+
+}
+.scissors-btn{
+    background-color:aqua;
+    border:none;
+
+
+}
+.omuk {
+position:relative;
+left:140px;
+top :340px;
+height:80px;
+border-radius:5px;
+}
+
+#om{
+    position: relative;
+    top: 600px;    
+    left:1000px;
+}
