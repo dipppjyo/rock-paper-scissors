@@ -1,53 +1,80 @@
+/* style.css */
 
-.name{
-color:blue;
-display: flex;
-justify-content: center;
-}
-
- button {
-    height: 150px;
-    width: 150px;
-    position: relative;
-    left: 510px;
-    top:150px;
-    border-radius: 50px;
-    margin-right: 30px;
-    font-size: 20px;
-    color:blue;
-    box-shadow: black;
-
-}
-
-
-.paper-btn{
-    background-color:aqua;
-    border:none;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
 }
-.rock-btn {
-    background-color:aqua;
-    border:none;
-  
 
-
+#om {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em; /* Increased font size */
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.8;
 }
-.scissors-btn{
-    background-color:aqua;
-    border:none;
 
-
+.name h1 {
+    font-size: 5em; /* Increased heading size */
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
+
+/* Button Styles */
+button {
+    font-size: 3em; /* Significantly increased font size */
+    padding: 40px 80px; /* Increased padding for much larger buttons */
+    margin: 20px 10px;
+    border: none;
+    border-radius: 20px; /* Larger border radius for rounded buttons */
+    background-color: #ff8c42;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #ffa563;
+    transform: scale(1.2); /* Noticeable hover effect */
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
 .omuk {
-position:relative;
-left:140px;
-top :340px;
-height:80px;
-border-radius:5px;
+    background-color: #ff6f61;
 }
 
-#om{
-    position: relative;
-    top: 600px;    
-    left:1000px;
+.omuk:hover {
+    background-color: #ff867c;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .name h1 {
+        font-size: 4em; /* Adjusted heading size for smaller screens */
+    }
+
+    button {
+        font-size: 2.5em; /* Slightly reduced for smaller screens */
+        padding: 30px 60px; /* Adjusted padding for smaller screens */
+    }
+
+    #om {
+        font-size: 1.5em; /* Adjusted header text size */
+    }
+ }
